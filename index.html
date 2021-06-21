@@ -5,31 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--    TODO: Скрипты подгружаются снизу-->
-    <!--    TODO: вынести скрипт в отдельный файл, аналогично CSS-->
-    <script>
-      function move() {
-        // TODO: переписать логика така:
-        //проверить наличие класса, если он есть удалить его и добавить другой
-        // ПРИМЕР:
-        // if ( document.getElementById("MyElement").classList.contains('MyClass') ){
-        // document.getElementById("MyElement").classList.add('MyClass');
-        // document.getElementById("MyElement").classList.remove('MyClass');
-        // }
-        // в цсс добавить соответствующие классы
-        // это один из вариантов
-
-        document.querySelector('#img').style.transition = 'all 2s ease-in-out';
-        document.querySelector('#img').style.top = -1 + 'px';
-      }
-    </script>
     <link rel="stylesheet" href="style.css">
-
     <title>Documgit ent</title>
+
 </head>
 <body>
 
-<div class="headSergei" id="headSergei">
+<div class="head" id="head">
     <h1>Серега</h1>
     <h2>
         <ol>
@@ -40,11 +22,15 @@
         </ol>
     </h2>
 </div>
+
 <div>
     <!--    TODO: кнопку сделать кнопкой (input type button или както так, почитай)-->
     <!--    TODO: события лучше указывать в конце, почитай кодстайл какойнить (например airbnb)-->
-    <div class="butt" id="butt" onclick="move()" style=""><p>Кнопка</p></div>
-    <div class="img" id="img"></div>
+    <input id="buttImageMove" class="buttImageMove" type="button" value="Переместить картинку">
+    <div id='img' class="imgOld"></div>
 </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
