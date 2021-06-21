@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    TODO: Скрипты подгружаются снизу-->
+    <!--    TODO: вынести скрипт в отдельный файл, аналогично CSS-->
+    <script>
+      function move() {
+        // TODO: переписать логика така:
+        //проверить наличие класса, если он есть удалить его и добавить другой
+        // ПРИМЕР:
+        // if ( document.getElementById("MyElement").classList.contains('MyClass') ){
+        // document.getElementById("MyElement").classList.add('MyClass');
+        // document.getElementById("MyElement").classList.remove('MyClass');
+        // }
+        // в цсс добавить соответствующие классы
+        // это один из вариантов
+
+        document.querySelector('#img').style.transition = 'all 2s ease-in-out';
+        document.querySelector('#img').style.top = -1 + 'px';
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Documgit ent</title>
+</head>
+<body>
+
+<div class="headSergei" id="headSergei">
+    <h1>Серега</h1>
+    <h2>
+        <ol>
+            <li>Мясо</li>
+            <li>Пиво</li>
+            <li>Калик</li>
+            <li>Покер</li>
+        </ol>
+    </h2>
+</div>
+<div>
+    <!--    TODO: кнопку сделать кнопкой (input type button или както так, почитай)-->
+    <!--    TODO: события лучше указывать в конце, почитай кодстайл какойнить (например airbnb)-->
+    <div class="butt" id="butt" onclick="move()" style=""><p>Кнопка</p></div>
+    <div class="img" id="img"></div>
+</div>
+</body>
+</html>
