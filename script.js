@@ -7,7 +7,7 @@ button.addEventListener('click', function () {
         elem.classList.add('imgNewMove');
     } else {
         elem.classList.remove('imgNewMove');
-        elem.classList.add('imgOldgi');
+        elem.classList.add('imgOld');
     }
 })
 
